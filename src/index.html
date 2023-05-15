@@ -6,9 +6,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+   <main>
+    <header>
+      <h1 class="titulo"> Cifra con Caesar</h1>
+      <img>
+    </header>
+   <div class="instrucciones">
+     Cifra y descifra mensajes para tus amigos solo usando letras mayusculas, evita usar la letra Ñ para evitar errores.
+   </div>
+   <br>
+   <p>Escoge el número de posiciones a recorres para ocultar tu texto</p>
+   <input type="number" id="cantidad" value="10" min="1" max="25">
+   <br>
+   <br>
+
+<div class="esconder">
+<textarea placeholder="Escribe aquí lo que quieres esconder"
+ name="texto" id="textoparacifrar" class="texto" cols="30" rows="10">
+</textarea>
+</div>
+<br>
+  <button type="button" id="cifrar">Cifra tu texto
+  </button>
+  
+  <button type="button" id="descifrar"> Descifra
+  </button>
+  <br>
+  <br>
+  <form action="">
+    <div class="resultado">
+   <textarea name="cifrado" class="resultado" id="textocifrado" cols="30" rows="10">
+   </textarea>
     </div>
+  </form>
+    <br>
+
+    <footer>
+      <p aling="center">Copyright Mitzy Mora</p>
+    </footer>
+    
     <script src="index.js" type="module"></script>
+  </div>
+
+</main>
   </body>
 </html>
