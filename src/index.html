@@ -1,53 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-   <main>
-    <header>
-      <h1 class="titulo"> Cifra con Caesar</h1>
-      <img>
-    </header>
-   <div class="instrucciones">
-     Cifra y descifra mensajes para tus amigos solo usando letras mayusculas, evita usar la letra Ñ para evitar errores.
-   </div>
-   <br>
-   <p>Escoge el número de posiciones a recorres para ocultar tu texto</p>
-   <input type="number" id="cantidad" value="10" min="1" max="25">
-   <br>
-   <br>
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>Caesar Cipher</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <main>
+        <header>
+          <h1>♥El twitter de Julio César♥</h1>
+        </header>
+        <div class="bienvenida">
+          ¿Te gustaría jugar con tus seguidores de twitter y dejarles un mensaje
+          encriptado?
+          <p>¡Hazlo con nosotros!</p>
+          <p>
+            Esta página está configura para que puedas cifrar y descifrar
+            códigos con tus amigos.
+          </p>
+          <div class="instrucciones-movimiento">
+            Instrucciones:
+            <li>
+              Escoge el número de posiciones del ABCdario que quieres mover.
+            </li>
+            <li>
+              Escribe tu texto ó, en su caso, copia y pega el código a
+              descifrar (recuerda que hay un límite de 280 caracteres).
+            </li>
+            <li>Clickea el botón para cifrar o descifrar tu texto.</li>
+          </div>
+        </div>
 
-<div class="esconder">
-<textarea placeholder="Escribe aquí lo que quieres esconder"
- name="texto" id="textoparacifrar" class="texto" cols="30" rows="10">
-</textarea>
-</div>
-<br>
-  <button type="button" id="cifrar">Cifra tu texto
-  </button>
-  
-  <button type="button" id="descifrar"> Descifra
-  </button>
-  <br>
-  <br>
-  <form action="">
-    <div class="resultado">
-   <textarea name="cifrado" class="resultado" id="textocifrado" cols="30" rows="10">
-   </textarea>
-    </div>
-  </form>
-    <br>
+        <div class="animo">
+          <p>¡Disfruta la magia!</p>
+        </div>
+        <div class="numero">
+          <input type="number" id="cantidad" value="0" min="0" max="20" />
+        </div>
+        <br />
+        <br />
 
-    <footer>
-      <p aling="center">Copyright Mitzy Mora</p>
-    </footer>
-    
-    <script src="index.js" type="module"></script>
-  </div>
+        <div class="esconder">
+          <textarea
+            placeholder="Escribe aquí lo que quieres esconder."
+            name="texto"
+            id="textoparacifrar"
+            class="paracifrar"
+            cols="56"
+            rows="5"
+          ></textarea>
+        </div>
+        <br />
+        <button type="button" id="botoncifrar">
+          <span>Cifra tu texto</span>
+        </button>
 
-</main>
-  </body>
+        <button type="button" id="botondescifrar">
+          <span>Descifra tu texto</span>
+        </button>
+        <br />
+        <br />
+        <form action="">
+          <div class="resultado">
+            <textarea
+              placeholder="No hay nada para descifrar."
+              name="cifrado"
+              class="resultado"
+              id="textocifrado"
+              cols="56"
+              rows="5"
+            >
+            </textarea>
+          </div>
+          <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            class="twitter-share-button"
+            data-show-count="false"
+            >Tweet</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </form>
+        <br />
+
+        <footer>
+          <p aling="center">
+            Copyright ©2023 | By Mitzy Mora.
+          </p>
+        </footer>
+
+        <script src="index.js" type="module"></script>
+      </main>
+    </body>
+  </html>
 </html>
